@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        td {
+            /* border: 1px solid black; */
+            height: 40px;
+            width: 53px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box1">
+
+        <div class="box2">
+
+            <div class="box3">
+                <div style="display: flex;">
+                    <div class="CASIO">CASIO</div>
+                    <div class="solar"></div>
+                    <div class="MX12">MX-120B</div>
+                    <div class="digit12">
+                        <span style="font-size: 25px;">12</span>
+                        <span style="font-size: 5px;">DIGITS</span>
+                    </div>
+                </div>
+                <div class="display displaystl">
+                    <div class="displayinwrite">
+                        <span id="clickit"></span></div>
+                </div>
+            </div>
+
+            <div class="box4">
+
+                <table style="width:100% ; padding: 12px;">
+
+                    <div>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="minbtn" onclick="operatorfun(event)">
+                                    <span>%</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn">
+                                    <span>MU</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <div class="minbtn mathbtn">
+                                    <span>MC</span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="minbtn mathbtn">
+                                    <span>MR</span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="minbtn mathbtn">
+                                    <span>M-</span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="minbtn mathbtn">
+                                    <span>M+</span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="minbtn mathbtn" onclick="operatorfun(event)">
+                                    <span>&#247</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <div class="minbtn mathbtn">
+                                    <span>+/-</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked">
+                                    <span>7</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>8</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>9</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn mathbtn " onclick="operatorfun(event)">
+                                    <span>&times</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <div class="minbtn mathbtn">
+                                    <span>&#x25BA</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>4</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>5</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>6</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn mathbtn " onclick="operatorfun(event)">
+                                    <span>-</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <div class="minbtnAC mathbtn onbtn " onclick="btnac(event)">
+                                    <span style="font-size: 13px;">C/AC <hr style="margin: 0px;"> ON</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>2</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>3</span>
+                                </div>
+                            </td>
+                            <td rowspan="2">
+                                <div class="minbtn plushbtn " onclick="operatorfun(event)">
+                                    <span>&#x2B</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+                    <div>
+                        <tr>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>0</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="digitalfunction(event)">
+                                    <span>00</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 clicked" onclick="pointfun(event)">
+                                    <span>.</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="minbtn1 mathbtn1 " onclick="equalfun(event)">
+                                    <span>=</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

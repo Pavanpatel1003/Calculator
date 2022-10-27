@@ -1,0 +1,191 @@
+.box1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #463c33;
+    border-radius: 40px;
+    height: 35rem;
+    width: 26rem;
+    background-color: #463c33;
+}
+
+.box2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #191013;
+    border-radius: 40px;
+    height: 33rem;
+    width: 25rem;
+    margin-top: 23px;
+    /* background-color: aqua; */
+}
+
+.box3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #191013;
+    border-radius: 39px 40px 0px 0px;
+    height: 192px;
+    width: 399px;
+    /* margin-top: -1px; */
+    background-color: #191013;
+}
+
+.box4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e7e7e7;
+    border-radius: 0px 0px 41px 39px;
+    height: 331px;
+    width: 399px;
+    margin-top: 3px;
+    background-color: #e7e7e7;
+}
+
+.CASIO {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 21px;
+    margin-left: 32px;
+}
+
+.solar {
+    border: 1px solid #26252b;
+    width: 136px;
+    height: 35px;
+    margin-top: 14px;
+    background-color: #26252b;
+    margin-left: 32px;
+}
+
+.MX12 {
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: 24px;
+    color: white;
+}
+
+.digit12 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 9px;
+    color: white;
+}
+
+.display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 99px;
+    width: 21rem;
+    background-color: #b3bab3;
+    margin-top: 28px;
+    border-radius: 5px;
+}
+
+.displaystl {
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayinwrite {
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.btncss {
+    height: 31px;
+    width: 61px;
+}
+
+.flex-box-2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.btncss1 {
+    height: 45px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.minbtn {
+    border: 3px solid #14100d;
+    height: 23px;
+    width: 80%;
+    border-radius: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background: #413d38;
+    cursor: pointer;
+}
+
+.minbtn:hover {
+    color: red;
+}
+
+.minbtn1:hover {
+    color: red;
+}
+
+.minbtnAC {
+    border: 3px solid #14100d;
+    height: 23px;
+    width: 80%;
+    border-radius: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background: #c4702a;
+}
+
+.mathbtn {
+    height: 35px;
+}
+
+.plushbtn {
+    height: 96px;
+}
+
+.minbtn1 {
+    border: 3px solid #14100d;
+    height: 23px;
+    width: 80%;
+    border-radius: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    background: #151417;
+    cursor: pointer;
+}
+
+.mathbtn1 {
+    height: 40px;
+}
+
+.onbtn {
+    cursor: pointer;
+}
+
+.onbtn:hover {
+    border: 3px solid #ff9800;
+}
